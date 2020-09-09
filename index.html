@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,11 @@
 <body>
 	<header>
 		<div class="container">
-			<img src="media/logo.svg" alt="logo" class="adaptiveHide">
+			<div class="smooth">
+				<a href="body">
+					<img src="media/logo.svg" alt="logo" class="adaptiveHide">
+				</a>
+			</div>
 			<a href="en/index.html" class="lang adaptiveHide"><span>RU</span><span>EN</span></a>
 			<div class="smooth adaptiveHide">
 				<ul>
@@ -34,7 +38,7 @@
 				<p>Online Fitness Games</p>
 				<h2>Онлайн-тренировки <br>с профессиональным тренером</h2>
 				<p class="p1">Получите персональную ежемесячную программу, упражнения, <br>питание и поддержку тренера, чтобы стать лучшей версией себя</p>
-				<a href="#sixth_screen">Выбрать тренера</a>
+				<a href="#sixth_screen">Выбрать пакет участия</a>
 			</div>
 			<div class="first_background">
 				<img src="media/background_elements/first_background.svg" alt="first_background">
@@ -42,6 +46,7 @@
 				<img src="media/background_elements/first_background_mobile.svg" alt="first_background_mobile">
 				<img src="media/background_elements/OFG.svg" alt="OFG">
 				<img src="media/background_elements/trainers.png" alt="trainers">
+				<img src="media/background_elements/trainers_adaptive.png" alt="trainers_adaptive">
 			</div>
 		</div>
 		<a href="#second_screen">
@@ -63,7 +68,7 @@
 				</div>
 				<div class="col-1-2">
 					<div class="headline">
-						<img src="media/icons/smile.png" alt="smile">
+						<img src="media/icons/smile.svg" alt="smile">
 						<h3>Самостоятельно</h3>
 					</div>
 					<div class="sliderAdaptive">
@@ -93,7 +98,7 @@
 			<div class="content">
 				<div class="col-1-2">
 					<div class="headline">
-						<img src="media/icons/biceps.png" alt="biceps">
+						<img src="media/icons/muscle.svg" alt="biceps">
 						<h3>С тренером<br>Online Fitness Games
 						</h3>
 					</div>
@@ -307,7 +312,7 @@
 				<h2>Следующая история <br>успеха может быть <br><span>именно про вас</span></h2>
 				<p class="p1">Просто выберите <br>оптимальный пакет <br>тренировок и <br>тренера</p>
 			</div>
-			<div class="choice">
+			<div class="choice smooth">
 				<h4>Выберите тренера</h4>
 				<div class="coaches">
 					<input type="radio" id="coach_1" name="coach" value="coach_1" class="serviceInput" checked>
@@ -347,16 +352,28 @@
 				<div class="level">
 					<input type="radio" id="beginner" name="level" value="beginner" class="serviceInput" checked>
 					<label for="beginner">
-						<img src="media/icons/beginner.svg" alt="beginner">
+						<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="3" y="16.5" width="2" height="4" fill="white"/>
+							<path d="M7 13.5H9V20.5H7V13.5Z" fill="white"/>
+							<rect opacity="0.2" x="11" y="10.5" width="2" height="10" fill="white"/>
+							<rect opacity="0.2" x="15" y="7.5" width="2" height="13" fill="white"/>
+							<rect opacity="0.2" x="19" y="4.5" width="2" height="16" fill="white"/>
+						</svg>
 						<p class="p2">Начинающий</p>
 					</label>
 					<input type="radio" id="expert" name="level" value="expert" class="serviceInput">
 					<label for="expert">
-						<img src="media/icons/expert.svg" alt="expert">
+						<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="3" y="16.5" width="2" height="4" fill="white"/>
+							<path d="M7 13.5H9V20.5H7V13.5Z" fill="white"/>
+							<rect x="11" y="10.5" width="2" height="10" fill="white"/>
+							<rect x="15" y="7.5" width="2" height="13" fill="white"/>
+							<rect opacity="0.2" x="19" y="4.5" width="2" height="16" fill="white"/>
+						</svg>
 						<p class="p2">Опытный</p>
 					</label>
 				</div>
-				<a href="#">Выбрать пакет участия</a>
+				<a href="#sixth_screen">Выбрать пакет участия</a>
 			</div>
 			<div class="third_background">
 				<img src="media/man.png" alt="man">
@@ -475,7 +492,7 @@
 					<p class="p2">Чемпионка Украины-России по современным танцам, участница шоу «Ты в теме».</p>
 					<p class="p2">Трижды входила в номинацию ТОП России «Фитнес-бикини».</p>
 				</div>
-				<div class="item">
+				<div class="item adaptive">
 					<img src="media/fifth_slider/photo_3.jpeg" alt="photo_3">
 					<h3>Елена Шумакова</h3>
 					<h4>Сертифицированный тренер CrossFit и CrossFit Gymnastics</h4>
@@ -483,7 +500,7 @@
 					<p class="p2">Кандидат в мастера спорта по тяжелой атлетике.</p>
 					<p class="p2">Сертифицированный тренер CrossFit Level 1 Trainer <br>(СF-L1).</p>
 				</div>
-				<div class="item">
+				<div class="item adaptive">
 					<img src="media/fifth_slider/photo_4.jpeg" alt="photo_4">
 					<h3>Виктор Набок</h3>
 					<h4>Тренер по гимнастике, рекордсмен книги <br>рекордов Гиннеса</h4>
@@ -550,13 +567,13 @@
 				</div>
 				<div class="bottom_line">
 					<p><span>$</span>50</p>
-					<button>Выбрать пакет</button>
+					<button class="packet-trigger" data-modal="modal-12">Выбрать пакет</button>
 				</div>
 				<img src="media/icons/fist.svg" alt="fist">
 			</div>
 			<div class="packet">
 				<div class="headline">
-					<h3>Самостоятельный</h3>
+					<h3>С live-тренировками</h3>
 					<p class="p2">Для начинающих и тех, кто хочет заниматься дома или в зале с тренером онлайн</p>
 				</div>
 				<div class="content">
@@ -576,7 +593,7 @@
 				</div>
 				<div class="bottom_line">
 					<p><span>$</span>150</p>
-					<button>Выбрать пакет</button>
+					<button class="packet-trigger" data-modal="modal-12">Выбрать пакет</button>
 				</div>
 				<img src="media/icons/fists.svg" alt="fists">
 			</div>
@@ -662,10 +679,10 @@
 					<p class="p1">Наш менеджер свяжется, ответит на все вопросы и поможет с выбором</p>
 					<div class="social">
 						<h4>Или напишите нам</h4>
-						<a href="#">
+						<a href="https://www.instagram.com/online_fitness_games_/" target="_blank">
 							<img src="media/icons/instagram.svg" alt="instagram">
 						</a>
-						<a href="#">
+						<a href="https://t.me/onlinefitnessgames" target="_blank">
 							<img src="media/icons/telegram.svg" alt="telegram">
 						</a>
 					</div>
@@ -675,7 +692,7 @@
 					<input type="text" name="name" placeholder="Введите ваше имя" required>
 					<input type="tel" name="tel" required id="phone" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
 					<input type="email" name="email" placeholder="Электронная почта" required>
-					<button type="submit">Подобрать</button>
+					<button type="submit">Оставить заявку</button>
 				</form>
 			</div>
 		</div>
@@ -696,18 +713,10 @@
 				</p>
 			</div>
 			<ul>
-				<li>
-					<button>Соглашение на обработку персональных данных</button>
-				</li>
-				<li>
-					<button>Пользовательское соглашение</button>
-				</li>
-				<li>
-					<button>Политика конфиденциальности</button>
-				</li>
-				<li>
-					<button>Оферта</button>
-				</li>
+				<li><button class="md-offer consent" data-modal="modal-12">Соглашение на обработку персональных данных</button></li>
+				<li><button class="md-offer agreement" data-modal="modal-12">Пользовательское соглашение</button></li>
+				<li><button class="md-offer policy" data-modal="modal-12">Политика конфиденциальности</button></li>
+				<li><button class="md-offer offer" data-modal="modal-12">Оферта</button></li>
 			</ul>
 			<a href="https://rezart.agency/" target="_blank" class="rezart">
 				<img src="media/icons/rezart.svg" alt="rezart">
@@ -732,6 +741,56 @@
 		<button class="md-close"><img src="media/icons/close.svg" alt="close"></button>
 	</div>
 
+	<div class="packet-modal md-effect-12">
+		<div class="md-content">
+			<h3></h3>
+			<p class="p3">Заполните форму, чтобы оплатить участие удобным способом</p>
+			<form action="" class="feedback_packet col-1-2">
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="tel" id="popup_phone" required onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+				<input type="email" name="email" placeholder="Электронная почта" required>
+				<button type="submit">Отправить</button>
+			</form>
+			<p class="p4">Тренер</p>
+			<div class="coaches">
+				<input type="radio" id="packet_coach_1" name="packet_coach" value="packet_coach_1" class="serviceInput" checked>
+				<label class="coach" for="packet_coach_1">
+					<div>
+						<img src="media/coach_1.png" alt="coach_1">
+						<img src="media/icons/checkmark.svg" alt="checkmark">
+					</div>
+					<p class="p2">Александр <br>Кравченко</p>
+				</label>
+				<input type="radio" id="packet_coach_2" name="packet_coach" value="packet_coach_2" class="serviceInput">
+				<label class="coach" for="packet_coach_2">
+					<div>
+						<img src="media/coach_2.png" alt="coach_2">
+						<img src="media/icons/checkmark.svg" alt="checkmark">
+					</div>
+					<p class="p2">Наталья <br>Ерохина</p>
+				</label>
+				<input type="radio" id="packet_coach_3" name="packet_coach" value="packet_coach_3" class="serviceInput">
+				<label class="coach" for="packet_coach_3">
+					<div>
+						<img src="media/coach_3.png" alt="coach_3">
+						<img src="media/icons/checkmark.svg" alt="checkmark">
+					</div>
+					<p class="p2">Елена <br>Шумакова</p>
+				</label>
+				<input type="radio" id="packet_coach_4" name="packet_coach" value="packet_coach_4" class="serviceInput">
+				<label class="coach" for="packet_coach_4">
+					<div>
+						<img src="media/coach_4.png" alt="coach_4">
+						<img src="media/icons/checkmark.svg" alt="checkmark">
+					</div>
+					<p class="p2">Виктор <br>Набок</p>
+				</label>
+			</div>
+			<p>После заявки вы сможете оплатить участие с любой карты VISA или MasterCard</p>
+		</div>
+		<button class="md-close"><img src="media/icons/close.svg" alt="close"></button>
+	</div>
+
 	<div class="menu md-effect-12">
 		<div class="md-content">
 			<ul>
@@ -748,6 +807,18 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="documents md-effect-12">
+		<div class="md-content">
+			<iframe
+				style="width:100%; height:100%;"
+				frameborder="0"
+				class="iframe"
+			></iframe>
+		</div>
+		<button class="md-close"><img src="media/icons/blackCross.svg" alt="blackCross"></button>
+	</div>
+
 	<div class="md-overlay"></div>
 	<div class="md-overlay1"></div>
 
@@ -770,6 +841,18 @@
 			separateDialCode: true,
 		});
 		var input = document.querySelector("#popupPhone");
+		window.intlTelInput(input, {
+			utilsScript: "js/utils.js",
+			initialCountry: "auto",
+  			geoIpLookup: function(success, failure) {
+   				$.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      				var countryCode = (resp && resp.country) ? resp.country : "";
+     			success(countryCode);
+				});
+			},
+			separateDialCode: true,
+		});
+		var input = document.querySelector("#popup_phone");
 		window.intlTelInput(input, {
 			utilsScript: "js/utils.js",
 			initialCountry: "auto",

@@ -115,6 +115,36 @@ $(function () {
 			},
 		}
 	});
+	$('.feedback_packet').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			tel: {
+				required: true,
+				maxlength: "10",
+				minlength: "7",
+			},
+			email: {
+				required: true
+			},
+		},
+		messages: {
+			name: {
+				required: "Введите имя"
+			},
+			tel: {
+				required: "Введите номер телефона",
+				number: "Введите корректный номер телефона",
+				maxlength: jQuery.validator.format("Введите корректный номер телефона"),
+				minlength: jQuery.validator.format("Введите корректный номер телефона")
+			},
+			email: {
+				required: "Введите e-mail",
+				email: "Введите корректный e-mail"
+			},
+		}
+	});
 	$('.feedback_en').validate({
 		rules: {
 			name: {
@@ -146,6 +176,36 @@ $(function () {
 		}
 	});
 	$('.feedback_en1').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			tel: {
+				required: true,
+				maxlength: "10",
+				minlength: "7",
+			},
+			email: {
+				required: true
+			},
+		},
+		messages: {
+			name: {
+				required: "Enter your name"
+			},
+			tel: {
+				required: "Enter your phone number",
+				number: "Enter the correct phone number",
+				maxlength: jQuery.validator.format("Enter the correct phone number"),
+				minlength: jQuery.validator.format("Enter the correct phone number")
+			},
+			email: {
+				required: "Enter your e-mail",
+				email: "Please enter a valid e-mail"
+			},
+		}
+	});
+	$('.feedback_en2').validate({
 		rules: {
 			name: {
 				required: true
@@ -257,6 +317,182 @@ $(function () {
 		document.body.style.overflowY = 'auto';
 	});
 });
+$(function () {
+	$('.packet-trigger').on('click', function() {
+		$('.packet-modal').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.packet-modal').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.packet-modal').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+});
+$(function () {
+	$('.md-offer').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer').on('click', function() {
+		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","docs/offer.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","docs/policy.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","docs/agreement.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","docs/consent.html");
+		}
+		else if ( $(this).hasClass('marathon') ) {
+			$('.iframe').attr("src","docs/marathon.html");
+		}
+	});
+});
+$(function () {
+	$('.md-offer1').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer1').on('click', function() {
+		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","../docs/offer.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","../docs/policy.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","../docs/agreement.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","../docs/consent.html");
+		}
+		else if ( $(this).hasClass('marathon') ) {
+			$('.iframe').attr("src","../docs/marathon.html");
+		}
+	});
+});
+$(function () {
+	$('.md-offer2').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer2').on('click', function() {
+		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","../../docs/offer_en.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","../../docs/policy_en.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","../../docs/agreement_en.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","../../docs/consent_en.html");
+		}
+		else if ( $(this).hasClass('marathon') ) {
+			$('.iframe').attr("src","../../docs/marathon_en.html");
+		}
+	});
+});
+$(function () {
+	$('.md-offer3').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer3').on('click', function() {
+		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","../docs/offer_en.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","../docs/policy_en.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","../docs/agreement_en.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","../docs/consent_en.html");
+		}
+		else if ( $(this).hasClass('marathon') ) {
+			$('.iframe').attr("src","../docs/marathon_en.html");
+		}
+	});
+});
+
+$(function () {
+	$('.packet-trigger').on('click', function() {
+		var text = $(this).parent().siblings( '.headline' ).children( 'h3' ).text();
+		$('.packet-modal h3').text("Пакет"+" «"+text+"»");
+	});
+});
+$(function () {
+	$('.packet-trigger').on('click', function() {
+		var text = $(this).parent().siblings( '.headline' ).children( 'h3' ).text();
+		$('.packet-modal h3.en').text("Packet"+" «"+text+"»");
+	});
+});
+// $(function () {
+// 	$( '.coach' ).on('click', function() {
+// 		var coach = $( '.choice' ).children( '.coaches' ).children( 'input:checked' ).attr('id');
+// 		var modal_coach = $( '.packet-modal' ).children( '.md-content' ).children( '.coaches' ).children( 'input' ).toArray().map(el => el.id);
+// 		$.each( modal_coach, function ( index, value ) {
+// 			if ( coach == value ) {
+// 				$( '.packet-modal' ).children( '.md-content' ).children( '.coaches' ).children( 'input' ).attr( 'checked', true );
+// 			}
+// 		});
+// 	});
+// });
 
 $(function() {
     $(document).ready(function(){
