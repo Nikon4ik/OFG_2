@@ -338,6 +338,9 @@ header .container a[href="body"] > img {
 #first_screen .content h2 {
 	margin-bottom: 15px;
 }
+#first_screen .content h2 br.adaptive {
+	display: none;
+}
 #first_screen .content .p1 {
 	color: #B6B6B6;
 }
@@ -763,7 +766,6 @@ header .container a[href="body"] > img {
 #coach_3:checked ~ label[for="coach_3"] img[alt="coach_3"],
 #coach_4:checked ~ label[for="coach_4"] img[alt="coach_4"] {
 	opacity: 0.5;
-	transition: all 0.4s;
 }
 #coach_1:checked ~ label[for="coach_1"] > div,
 #coach_2:checked ~ label[for="coach_2"] > div,
@@ -1816,7 +1818,6 @@ footer .rezart img {
 #packet_coach_3:checked ~ label[for="packet_coach_3"] img[alt="coach_3"],
 #packet_coach_4:checked ~ label[for="packet_coach_4"] img[alt="coach_4"] {
 	opacity: 0.5;
-	transition: all 0.4s;
 }
 #packet_coach_1:checked ~ label[for="packet_coach_1"] img[alt="checkmark"],
 #packet_coach_2:checked ~ label[for="packet_coach_2"] img[alt="checkmark"],
@@ -1828,6 +1829,10 @@ footer .rezart img {
 @media screen and (max-width: 1550px) {
 	.documents {
 		width: 70%;
+	}
+	.packet-modal {
+		height: 100vh;
+		overflow-y: scroll;
 	}
 }
 
@@ -2206,6 +2211,9 @@ footer .rezart img {
 	#sixth_screen .container > h2 {
 		text-align: center;
 	}
+	.packet-modal {
+		height: 780px;
+	}
 	#sixth_screen .packet {
 		margin-bottom: 25px;
 	}
@@ -2303,6 +2311,10 @@ footer .rezart img {
 	header {
 		height: 55px;
 	}
+	header .container {
+		height: 55px;
+		z-index: 1100;
+	}
 	header div > button {
 		display: none;
 	}
@@ -2311,6 +2323,7 @@ footer .rezart img {
 	}
 	header .container .menuBar_wrapper {
 		right: 15px;
+		position: fixed;
 	}
 	header .container a[href="body"] > img {
 		width: 60px;
@@ -2330,6 +2343,9 @@ footer .rezart img {
 	}
 	#first_screen .content h2 br {
 		display: none;
+	}
+	#first_screen .content h2 br.adaptive {
+		display: initial;
 	}
 	#first_screen .content a {
 		width: 290px;
@@ -2875,13 +2891,12 @@ footer .rezart img {
 		width: 100%;
 	}
 	.packet-modal .coaches {
-		height: 124px;
-		overflow-x: scroll;
-		justify-content: unset;
-		flex-wrap: nowrap;
+		justify-content: space-around;
 	}
 	.packet-modal .coach {
-		margin-right: 35px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
 	}
 	.packet-modal h3 {
 		margin-top: 15px;
