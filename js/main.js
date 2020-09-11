@@ -482,17 +482,24 @@ $(function () {
 		$('.packet-modal h3.en').text("Packet"+" «"+text+"»");
 	});
 });
-// $(function () {
-// 	$( '.coach' ).on('click', function() {
-// 		var coach = $( '.choice' ).children( '.coaches' ).children( 'input:checked' ).attr('id');
-// 		var modal_coach = $( '.packet-modal' ).children( '.md-content' ).children( '.coaches' ).children( 'input' ).toArray().map(el => el.id);
-// 		$.each( modal_coach, function ( index, value ) {
-// 			if ( coach == value ) {
-// 				$( '.packet-modal' ).children( '.md-content' ).children( '.coaches' ).children( 'input' ).attr( 'checked', true );
-// 			}
-// 		});
-// 	});
-// });
+$(function () {
+	$( '.coach' ).on('click', function() {
+		var coach = $(this).prev().attr('id');
+		var modal_coach = $( '.packet-modal' ).children( '.md-content' ).children( '.coaches' ).children( 'input' ).toArray().map(el => el.value);
+		if( modal_coach[0] == coach ) {
+			document.getElementById( 'packet_coach_1' ).setAttribute('checked', true);
+		}
+		else if( modal_coach[1] == coach ) {
+			document.getElementById( 'packet_coach_2' ).setAttribute('checked', true);
+		}
+		else if( modal_coach[2] == coach ) {
+			document.getElementById( 'packet_coach_3' ).setAttribute('checked', true);
+		}
+		else if( modal_coach[3] == coach ) {
+			document.getElementById( 'packet_coach_4' ).setAttribute('checked', true);
+		}
+	});
+});
 
 $(function() {
     $(document).ready(function(){
