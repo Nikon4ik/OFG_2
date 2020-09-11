@@ -238,14 +238,14 @@ $(function () {
 });
 $(function() {
 	$(window).scroll(function () {
-		if( $(window).scrollTop() > 1 && $(window).width() > '600' ) {
+		if( $(window).scrollTop() > 1 && $(window).width() > '600' &&  $('header').hasClass('other') ) {
 			$('header').css('position','fixed');
 			$('header').css('top','0');
 			$('header').css('z-index','1100');
 			$('.header').css('background-color','#1D1D1D');
 			$('#first_screen').css('margin-top','100px');
 		}
-		else if( $(window).scrollTop() == 0 && $(window).width() > '600' ) {
+		else if( $(window).scrollTop() == 0 && $(window).width() > '600' && $('header').hasClass('other') ) {
 			$('header').css('position','initial');
 			$('.header').css('background-color','#252525');
 			$('#first_screen').css('margin-top','unset');

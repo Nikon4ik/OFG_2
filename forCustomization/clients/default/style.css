@@ -297,6 +297,8 @@
             justify-content: space-between;
             margin-top: 10px;
             margin-bottom: 15px;
+            align-content: center;
+            align-items: center;
         }
         
         #order-number {
@@ -310,6 +312,8 @@
             color: #77808b;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            align-content: center;
         }
         
         #total-amount {
@@ -410,7 +414,7 @@
             color: #FFFFFF;
             border: none;
             border-bottom: 1px solid #c4c4c4;
-            padding: 0 15px;
+            padding: 0 15px 0 50px;
             display: inline-block;
             background: rgba(196, 196, 196, 0.03);
             outline: none !important;
@@ -419,11 +423,46 @@
             font-size: 18px;
             margin-right: 5px;
         }
-        
+        #input-card-number {
+            background-image: url(../../../forCustomization/images/icons/card.svg)!important;
+            background-repeat: no-repeat!important;
+            background-position-x: 16px!important;
+            background-position-y: center!important;
+        }
+        #input-card-holder {
+            background-image: url(../../../forCustomization/images/icons/calendar.svg)!important;
+            background-repeat: no-repeat!important;
+            background-position-x: 16px!important;
+            background-position-y: center!important;
+        }
+        #card-expires-month,
+        #card-expires-year {
+            background-image: url(../../../forCustomization/images/icons/calendar.svg)!important;
+            background-repeat: no-repeat!important;
+            background-position-x: 16px!important;
+            background-position-y: center!important;
+        }
+        #input-card-cvc {
+            background-image: url(../../../forCustomization/images/icons/lock.svg)!important;
+            background-repeat: no-repeat!important;
+            background-position-x: 16px!important;
+            background-position-y: center!important;
+        }
         #payment-form .form-input select option {
             color: #000000;
         }
-        
+        .line {
+            width: 47%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            bottom: -5px;
+        }
+        .long_line {
+            width: 57%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            bottom: -5px;
+        }
         .processing .form-input input {
             background: #f5f7f9 !important;
             border-color: #d5dde9 !important;
@@ -526,6 +565,12 @@
             #payment-data-card-fields {
                 width: 100%;
             }
+            .line {
+                width: 15%;
+            }
+            .long_line {
+                width: 30%;
+            }
         }
         
         @media(max-width:425px) and (max-width:770px) {
@@ -547,6 +592,12 @@
             }
             #payment-form .form-group>div {
                 width: 50%;
+            }
+            .line {
+                display: none;
+            }
+            .long_line {
+                display: none;
             }
         }
         
@@ -899,7 +950,9 @@
             display: block;
             width: 79px;
             height: 35px;
-            background: url(../../images/icons_sprite.png) no-repeat -145px -5px
+            background-image: url(../../images/icons/card_pay.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         
         #footer-icons {
@@ -920,7 +973,8 @@
             display: inline-block;
             width: 31px;
             height: 20px;
-            background-image: url(../../images/icons/Mastercard.png);
+            background-repeat: no-repeat;
+            background-image: url(../../images/icons/mastercard.svg);
             background-size: contain;
         }
         
@@ -935,8 +989,9 @@
             width: 54px;
             height: 20px;
             display: inline-block;
-            background: url(../../images/icons/Visa.png);
+            background: url(../../images/icons/visa.svg);
             background-size: contain;
+            background-repeat: no-repeat;
         }
         
         #onlinepay-icon {
@@ -971,8 +1026,9 @@
             width: 26px;
             height: 20px;
             display: inline-block;
-            background: url(../../images/icons/JCB.png);
+            background: url(../../images/icons/jcb.svg);
             background-size: contain;
+            background-repeat: no-repeat;
         }
         
         #alipay-icon {
@@ -986,8 +1042,9 @@
             width: 66px;
             height: 20px;
             display: inline-block;
-            background: url(../../images/icons/pci.png);
+            background: url(../../images/icons/pci.svg);
             background-size: contain;
+            background-repeat: no-repeat;
         }
         
         #bitcoin-icon {
