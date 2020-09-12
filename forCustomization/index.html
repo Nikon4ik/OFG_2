@@ -139,7 +139,7 @@
                                     <div class="form-input">
                                         <select id="card-expires-month" required name="month">
                                         <option data-i18n="paymentdata.card.expires.month" selected disabled
-                                                value="0"></option>
+                                                value="0">ММ</option>
                                         <option value="1">01</option>
                                         <option value="2">02</option>
                                         <option value="3">03</option>
@@ -163,7 +163,7 @@
                                         <span id="card-expires-delimiter">/</span>
                                         <select id="card-expires-year" required name="year">
                                         <option data-i18n="paymentdata.card.expires.year" selected disabled
-                                                value="0"></option>
+                                                value="0">ГГ</option>
                                         <option value="2016">16</option>
                                         <option value="2017">17</option>
                                         <option value="2018">18</option>
@@ -342,6 +342,16 @@
 
             form.appendTo('body').submit();
         }
+    </script>
+    <script>
+        var element = document.getElementById("card-expires-month");
+        var element_1 = document.getElementById("card-expires-year");
+        element.onchange = function(){
+            element.style = "color: #FFFFFF!important;"
+        };
+        element_1.onchange = function(){
+            element_1.style = "color: #FFFFFF!important;"
+        };
     </script>
 </body>
 
