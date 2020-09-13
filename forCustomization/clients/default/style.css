@@ -464,6 +464,7 @@
             background-repeat: no-repeat!important;
             background-position-x: 16px!important;
             background-position-y: center!important;
+            -webkit-appearance: none;
         }
         #input-card-cvc {
             background-image: url(../../../forCustomization/images/icons/lock.svg)!important;
@@ -627,6 +628,14 @@
             #footer-text {
                 width: 260px!important;
             }
+            #card-expires-field .form-input.month {
+                background-position-x: 92%!important;
+                background-position-y: 36%!important;
+            }
+            #card-expires-field .form-input.year {
+                background-position-x: 99%!important;
+                background-position-y: 36%!important;
+            }
         }
         @media (max-width: 380px) {
             .line {
@@ -657,7 +666,14 @@
             width: 92%!important;
         }
         #card-expires-field .form-input {
-            font-size: 0
+            font-size: 0;
+        }
+        #card-expires-field .form-input.month,
+        #card-expires-field .form-input.year {
+            background-image: url(../../images/icons/drop_arrow.svg);
+            background-repeat: no-repeat;
+            background-position-x: 83%;
+            background-position-y: center;
         }
         
         #card-expires-month {
@@ -1214,13 +1230,13 @@
             content: '';
             width: 22px;
             height: 10px;
-            background: url(../../images/icons_sprite.png) no-repeat -102px -65px;
             display: block;
             position: absolute;
-            bottom: -10px;
+            bottom: -4px;
             z-index: 5;
             left: 50%;
-            margin-left: -11px
+            margin-left: -11px;
+            font-size: 20px;
         }
         
         #cvc-hint-text {
@@ -1865,10 +1881,9 @@
         }
         
         .hint-content:after {
-            content: '';
+            content: '▼';
             width: 22px;
             height: 10px;
-            background: url(../../images/icons_sprite.png) no-repeat -102px -65px;
             display: block;
             position: absolute;
             bottom: -10px;
@@ -1878,22 +1893,23 @@
         }
         
         #cvc-hint-bubble.opened {
-            bottom: 65px;
+            bottom: 35px;
             opacity: 1;
             visibility: visible
         }
         
         #cvc-hint-bubble:after {
-            content: '';
+            content: '▼';
             width: 22px;
             height: 10px;
-            background: url(../../images/icons_sprite.png) no-repeat -102px -65px;
             display: block;
+            color: #1d1d1d;
             position: absolute;
-            bottom: -10px;
+            bottom: -5px;
             z-index: 5;
             left: 50%;
-            margin-left: -11px
+            font-size: 20px;
+            margin-left: -9px
         }
         
         #cvc-hint-text {
@@ -1919,6 +1935,6 @@
         
         @media(max-width:460px) {
             #cvc-hint-bubble.opened {
-                bottom: 46px
+                bottom: 35px
             }
         }
