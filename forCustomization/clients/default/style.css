@@ -1554,7 +1554,7 @@
             }
             #action-cancel {
                 padding: 0 10px;
-                margin-bottom: 20px;
+                margin-top: 20px;
             }
         }
         @media(max-width:425px) {
