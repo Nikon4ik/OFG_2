@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <!-- Preload -->
     <link rel="preload" href="js/payment.bundle.min.js" as="script">
@@ -18,7 +18,7 @@
     <title>Cardpay Payment Page</title>
     <!-- Styles -->
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="clients/merchant_name/style.css">
+    <link rel="stylesheet" href="clients/fitnessgames.online/style.css">
     <!-- Scripts -->
     <script type="text/javascript" async src="js/fingerprint.js"></script>
     <script>
@@ -439,15 +439,15 @@
         <div id="footer-cardpay">
             <a href="http://www.cardpay.com/" target="_blank" id="cardpay-icon"></a>
         </div>
+        <div id="footer-text">
+            <div id="copyright" data-i18n="messages.copyright"></div>
+        </div>
         <div id="footer-icons">
             <span id="visa-icon"></span>
             <span id="mastercard-icon"></span>
             <span id="jcb-icon"></span>
             <span id="unionpay-icon"></span>
             <span id="pci-icon"></span>
-        </div>
-        <div id="footer-text">
-            <div id="copyright" data-i18n="messages.copyright"></div>
         </div>
     </footer>
 
@@ -484,6 +484,26 @@
 
         form.appendTo('body').submit();
     }
+</script>
+<script>
+    var element = document.getElementById("card-expires-month");
+    var element_1 = document.getElementById("card-expires-year");
+    element.onchange = function(){
+        element.style = "color: #FFFFFF!important;"
+    };
+    element_1.onchange = function(){
+        element_1.style = "color: #FFFFFF!important;"
+    };
+
+    var b = document.getElementById('order-number-cnt').firstChild.nextSibling;
+    var c = document.createElement('span');
+    c.classList.add('line');
+    b.after(c);
+
+    var d = document.getElementById('total-amount-cnt').firstChild.nextSibling;
+    var f = document.createElement('span');
+    f.classList.add('long_line');
+    d.after(f);
 </script>
 </body>
 </html>
