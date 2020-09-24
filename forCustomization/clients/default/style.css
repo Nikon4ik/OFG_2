@@ -235,7 +235,7 @@
         
         @media(max-width: 425px) {
             #payment-actions {
-                margin-top: 20px!important;
+                margin-top: 50px!important;
             }
             #payment-form .form-group.buttons {
                 width: 90%!important;
@@ -1620,6 +1620,9 @@
             }
             #cvc-hint {
                 margin-left: 25px;
+            }
+            label.error[for="input-card-cvc"] {
+                left: 0!important;
             }
         }
         @media(max-width:1200px) {
