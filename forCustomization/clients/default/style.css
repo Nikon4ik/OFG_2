@@ -256,11 +256,9 @@
             #card-expires-year {
                 margin-left: 7%;
                 width: 45%;
-                margin-bottom: 15px;
             }
             #card-expires-month {
                 width: 45%;
-                margin-bottom: 15px;
             }
             #footer-cardpay {
                 height: max-content;
@@ -275,13 +273,27 @@
             #footer-icons {
                 margin-top: 0;
             }
-            #payment-form .form-input input,
-            #payment-form .form-input select {
-                width: 100%!important;
-            }
             #main-container {
                 margin: 0;
             }
+            #input-card-number {
+                width: 100%!important;
+                margin-right: 0!important;
+            }
+            #input-card-holder {
+                width: 100%!important;
+                margin-right: 0!important;
+            }
+            #card-cvc-field {
+                position: unset!important;
+            }
+            #card-cvc-field .form-input {
+                padding: 0!important;
+            }
+            #payment-form .form-label {
+                margin-left: 0!important;
+            }
+            
         }
         
         #merchant-title {
@@ -630,9 +642,6 @@
             }
             #payment-form .form-group {
                 width: 95%;
-            }
-            #payment-form .form-group>div {
-                width: 50%;
             }
             .line {
                 width: 28%;
@@ -1533,21 +1542,20 @@
                 position: relative;
             }
             #payment-form .form-group {
-                margin-bottom: 25px;
+                margin-bottom: 35px;
                 padding-left: 0;
             }
             #payment-form label.error {
                 display: block;
                 position: static;
-                margin-top: 6px;
                 text-align: center
             }
             label.error[for="input-card-cvc"] {
                 position: absolute !important;
                 text-align: center !important;
                 width: 100% !important;
-                left: 0 !important;
-                bottom: -27px !important
+                left: 30px!important;
+                text-align: start!important;
             }
             #payment-data-fields h2 {
                 margin: 50px 0 30px !important;
@@ -1590,8 +1598,30 @@
             #payment-form .form-label[for="card-expires-year"] {
                 padding-left: 7%;
             }
+            #payment-data-card {
+                width: 95%;
+            }
+            #payment-form .form-group {
+                width: 95%!important;
+            }
         }
-        
+        @media(max-width:425px) {
+            #card-expires-month {
+                width: calc(50% - 10px)!important;
+                margin-right: 0!important;
+            }
+            #card-expires-year {
+                width: calc(50% - 10px)!important;
+                margin-right: 0!important;
+                margin-left: 20px;
+            }
+            #card-cvc-field.form-group {
+                width: 44%!important;
+            }
+            #cvc-hint {
+                margin-left: 25px;
+            }
+        }
         @media(max-width:1200px) {
             footer {
                 height: auto;
