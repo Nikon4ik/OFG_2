@@ -531,7 +531,8 @@
             margin-left: .5%;
             padding: 6px 0;
             cursor: default !important;
-            line-height: 15px
+            line-height: 15px;
+            position: absolute;
         }
         
         #payment-form input.error,
