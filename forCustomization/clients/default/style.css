@@ -471,10 +471,6 @@
             background-repeat: no-repeat!important;
             background-position-x: 16px!important;
             background-position-y: center!important;
-            transition: none!important;
-        }
-        #input-card-cvc.error {
-            margin-bottom: 27px;
         }
         #payment-form .form-input select option {
             color: #000000;
@@ -535,8 +531,7 @@
             margin-left: .5%;
             padding: 6px 0;
             cursor: default !important;
-            line-height: 15px;
-            bottom: -15px;
+            line-height: 15px
         }
         
         #payment-form input.error,
