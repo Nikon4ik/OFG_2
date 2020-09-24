@@ -126,7 +126,9 @@
                 border: none !important
             }
         }
-        
+        #payment-data-accept {
+            display: none;
+        }
         #payment-form {
             flex: 1
         }
@@ -371,6 +373,7 @@
             width: 53%;
             justify-content: center;
             margin-left: 5%;
+            position: relative!important;
         }
         
         #payment-form fieldset,
@@ -384,10 +387,6 @@
         #payment-form .form-group.buttons {
             width: 48%;
             justify-content: space-between;
-        }
-        
-        #payment-form .form-group>div {
-            width: 33%;
         }
         
         #payment-form .form-input.card,
@@ -501,7 +500,8 @@
         
         #card-expires-month,
         #card-expires-year {
-            width: 47%
+            width: 44%!important;
+            margin-right: 20px!important;
         }
         
         #payment-form .form-input input:focus,
@@ -553,7 +553,7 @@
         }
         
         #payment-data-fields {
-            width: 70%;
+            width: 100%;
             padding: 24px;
         }
         option[data-i18n="paymentdata.card.expires.year"] {
@@ -574,6 +574,12 @@
             }
             #card-expires-field .form-input.cvc {
                 display: flex;
+            }
+            #card-cvc-field {
+                width: calc(33.33% - 19px)!important;
+                position: absolute;
+                bottom: 0;
+                right: 60px;
             }
         }
         
@@ -663,7 +669,7 @@
         }
         
         #card-expires-field {
-            width: 92%!important;
+            width: calc(66.66% - 40px)!important;
         }
         #card-expires-field .form-input {
             font-size: 0;
@@ -677,7 +683,8 @@
         }
         
         #card-expires-month {
-            margin-right: 6%
+            margin-right: 20px!important;
+            width: 44%!important;
         }
         
         #card-expires-delimiter {
@@ -1500,11 +1507,11 @@
                 text-align: left !important
             }
             #card-cvc-field {
-                text-align: center
+                text-align: center;
             }
             #card-cvc-field .form-input {
                 padding-left: 32px;
-                position: relative
+                position: relative;
             }
             #payment-form .form-group {
                 margin-bottom: 25px;
