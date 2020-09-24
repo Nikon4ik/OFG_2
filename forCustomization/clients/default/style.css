@@ -532,7 +532,7 @@
             padding: 6px 0;
             cursor: default !important;
             line-height: 15px;
-            position: absolute;
+            position: absolute!important;
         }
         
         #payment-form input.error,
@@ -578,14 +578,14 @@
             #card-expires-field .form-input.cvc {
                 display: flex;
             }
-            #card-cvc-field {
-                width: calc(33.33% - 19px)!important;
-                position: absolute;
-                bottom: 0;
-                right: 60px;
-            }
+            
         }
-        
+        #card-cvc-field {
+            width: calc(33.33% - 19px)!important;
+            position: absolute;
+            bottom: 0;
+            right: 60px;
+        }
         @media(max-width:770px) {
             #payment-data-fields {
                 border: 0;
@@ -597,6 +597,9 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            #payment-data-card {
+                width: 70%;
+            }
             #payment-data-card-fields {
                 width: 100%;
             }
@@ -605,6 +608,9 @@
             }
             .long_line {
                 width: 30%;
+            }
+            #card-expires-month, #card-expires-year {
+                margin-right: 5px!important;
             }
         }
         
@@ -686,7 +692,7 @@
         }
         
         #card-expires-month {
-            margin-right: 20px!important;
+            margin-right: 20px;
             width: 44%!important;
         }
         
@@ -771,8 +777,17 @@
                 padding-left: 0 !important;
                 text-align: center
             }
+            #card-expires-field {
+                width: calc(66.66% - 10px)!important;
+            }
+            #card-cvc-field {
+                width: calc(33.33% + 27px)!important;
+                right: 40px;
+            }
+            #card-cvc-field .form-label {
+                margin-left: 30px;
+            }
         }
-        
         #accept-terms-field,
         #same-as-shipping-field,
         #use-as-billing-field,
@@ -1491,7 +1506,7 @@
         
         @media(max-width:770px) {
             #cvc-hint {
-                margin-left: 5px;
+                margin-left: 30px;
             }
             #payment-form .form-input input#input-card-cvc {
                 width: 96%!important;
@@ -1511,6 +1526,7 @@
             }
             #card-cvc-field {
                 text-align: center;
+                margin-bottom: 0!important;
             }
             #card-cvc-field .form-input {
                 padding-left: 32px;
