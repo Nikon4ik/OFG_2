@@ -231,6 +231,9 @@
                 position: relative;
                 top: -75px;
             }
+            #total-amount {
+                margin-left: 130px!important;
+            }
         }
         #footer-icons {
             position: relative;
@@ -678,6 +681,9 @@
             .long_line {
                 width: 43%;
             }
+            #total-amount {
+                margin-left: 180px!important;
+            }
             #total-amount::before {
                 width: 43%;
             }
@@ -691,6 +697,13 @@
             #card-expires-field .form-input.year {
                 background-position-x: 99%!important;
                 background-position-y: 36%!important;
+            }
+            #footer-icons {
+                position: unset;
+                width: 100%;
+            }
+            #footer-text {
+                position: unset;
             }
         }
         @media (max-width: 380px) {
@@ -706,6 +719,9 @@
             #total-amount::before {
                 width: 38%;
             }
+            #total-amount {
+                margin-left: 150px!important;
+            }
         }
         @media (max-width: 325px) {
             .line {
@@ -716,6 +732,9 @@
             }
             .long_line {
                 width: 29%;
+            }
+            #total-amount {
+                margin-left: 105px!important;
             }
             #total-amount::before {
                 width: 29%;
@@ -1679,7 +1698,6 @@
                 display: inline-block
             }
             #footer-text {
-                position: static;
                 padding: 20px 20px 30px;
                 line-height: 20px;
                 text-align: center
