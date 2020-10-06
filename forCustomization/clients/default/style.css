@@ -64,7 +64,7 @@
         }
         
         select {
-            -webkit-border-radius: 0
+            -webkit-border-radius: 0;
         }
         
         input[type="text"],
@@ -232,7 +232,14 @@
                 top: -75px;
             }
         }
-        
+        #footer-icons {
+            position: relative;
+            left: 249px;
+        }
+        #footer-text {
+            position: relative;
+            left: -200px;
+        }
         @media(max-width: 425px) {
             #payment-actions {
                 margin-top: 50px!important;
@@ -631,7 +638,13 @@
             .line {
                 width: 15%;
             }
+            #order-number::before {
+                width: 15%;
+            }
             .long_line {
+                width: 30%;
+            }
+            #total-amount::before {
                 width: 30%;
             }
             #card-expires-month, #card-expires-year {
@@ -659,7 +672,13 @@
             .line {
                 width: 28%;
             }
+            #order-number::before {
+                width: 28%;
+            }
             .long_line {
+                width: 43%;
+            }
+            #total-amount::before {
                 width: 43%;
             }
             #footer-text {
@@ -678,7 +697,13 @@
             .line {
                 width: 22%;
             }
+            #order-number::before {
+                width: 22%;
+            }
             .long_line {
+                width: 38%;
+            }
+            #total-amount::before {
                 width: 38%;
             }
         }
@@ -686,7 +711,13 @@
             .line {
                 width: 11%;
             }
+            #order-number::before {
+                width: 11%;
+            }
             .long_line {
+                width: 29%;
+            }
+            #total-amount::before {
                 width: 29%;
             }
         }
@@ -936,15 +967,15 @@
             padding: 60px;
             font-size: 16px;
             width: 43%;
-            border-left: 1px solid #d5dde9
+            border-left: 1px solid #d5dde9;
         }
         
         #order-confirm-block {
-            font-size: 16px !important
+            font-size: 16px !important;
         }
         
         #order-confirm-block label {
-            line-height: 1.5
+            line-height: 1.5;
         }
         
         @media(max-width:780px) {
@@ -953,87 +984,88 @@
                 width: 100%;
                 padding: 40px;
                 border-left: 0;
-                border-bottom: 1px solid #d5dde9
+                border-bottom: 1px solid #d5dde9;
             }
             #order-details h2 {
-                text-align: center
+                text-align: center;
             }
             #order-confirm-block {
-                text-align: center
+                text-align: center;
             }
+            
         }
         
         @media(min-width:425px) and (max-width:780px) {
             #order-item-list {
                 margin: 0 auto;
                 width: 70%;
-                text-align: center
+                text-align: center;
             }
         }
         
         .display-orderitems #order-details {
-            display: block
+            display: block;
         }
         
         @media(max-width:420px) {
             #order-items {
                 text-align: center;
-                width: 100%
+                width: 100%;
             }
         }
         
         @media(min-width:420px) and (max-width:720px) {
             #order-items {
                 width: 90%;
-                margin: 0 auto
+                margin: 0 auto;
             }
         }
         
         .order-item {
-            margin: 30px 0 35px
+            margin: 30px 0 35px;
         }
         
         .order-item-title {
             font-weight: bold;
             font-size: 18px;
-            word-wrap: break-word
+            word-wrap: break-word;
         }
         
         .order-item-info {
-            line-height: 22px
+            line-height: 22px;
         }
         
         .order-item-description {
             margin: 10px 0 8px;
             line-height: 20px;
             color: #777;
-            word-wrap: break-word
+            word-wrap: break-word;
         }
         
         .order-item-quantity,
         .order-item-price,
         .order-item-total-amount {
-            white-space: nowrap
+            white-space: nowrap;
         }
         
         .order-item-quantity span,
         .order-item-price span,
         .order-item-total-amount span {
-            margin-right: 5px
+            margin-right: 5px;
         }
         
         .order-item-quantity,
         .order-item-price {
-            margin-right: 10px
+            margin-right: 10px;
         }
         
         #order-item-total {
             font-weight: bold;
-            font-size: 17px
+            font-size: 17px;
         }
         
         html[lang="ru"] footer {
-            font-size: 15px
+            font-size: 15px;
         }
         
         footer {
@@ -1048,7 +1080,7 @@
         }
         
         #copyright {
-            padding-top: 25px
+            padding-top: 25px;
         }
         
         #footer-cardpay {
@@ -1073,11 +1105,11 @@
         }
         
         #footer-icons span {
-            margin-left: 8px
+            margin-left: 8px;
         }
         
         #footer-cards {
-            padding: 10px 0
+            padding: 10px 0;
         }
         
         #mastercard-icon {
@@ -1093,7 +1125,7 @@
             display: inline-block;
             width: 87px;
             height: 35px;
-            background: url(../../images/icons_sprite.png) no-repeat -5px -50px
+            background: url(../../images/icons_sprite.png) no-repeat -5px -50px;
         }
         
         #visa-icon {
