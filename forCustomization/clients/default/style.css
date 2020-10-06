@@ -339,8 +339,8 @@
             width: 55%;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             position: absolute;
-            bottom: 0;
-            left: 0;
+            bottom: 5px;
+            left: 130px;
         }
         
         #total-amount-cnt {
@@ -357,15 +357,15 @@
         #total-amount {
             color: #FFFFFF;
             font-size: 24px;
-            margin-left: 400px;
+            margin-left: 350px;
         }
         #total-amount::before {
             content: "";
             width: 62%;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             position: absolute;
-            bottom: 2px;
-            left: 15px;
+            bottom: 5px;
+            left: 70px;
         }
         
         #currency {
