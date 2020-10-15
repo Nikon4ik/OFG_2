@@ -344,14 +344,6 @@
             color: #FFFFFF;
             font-size: 21px;
         }
-        #order-number::before {
-            content: "";
-            width: 55%;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            position: absolute;
-            bottom: 5px;
-            left: 130px;
-        }
         
         #total-amount-cnt {
             padding-top: 10px;
@@ -368,14 +360,6 @@
             color: #FFFFFF;
             font-size: 24px;
             margin-left: 350px;
-        }
-        #total-amount::before {
-            content: "";
-            width: 62%;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            position: absolute;
-            bottom: 5px;
-            left: 70px;
         }
         
         #currency {
@@ -641,13 +625,7 @@
             .line {
                 width: 15%;
             }
-            #order-number::before {
-                width: 15%;
-            }
             .long_line {
-                width: 30%;
-            }
-            #total-amount::before {
                 width: 30%;
             }
             #card-expires-month, #card-expires-year {
@@ -675,17 +653,11 @@
             .line {
                 width: 28%;
             }
-            #order-number::before {
-                width: 28%;
-            }
             .long_line {
                 width: 43%;
             }
             #total-amount {
                 margin-left: 180px!important;
-            }
-            #total-amount::before {
-                width: 43%;
             }
             #footer-text {
                 width: 260px!important;
@@ -710,13 +682,7 @@
             .line {
                 width: 22%;
             }
-            #order-number::before {
-                width: 22%;
-            }
             .long_line {
-                width: 38%;
-            }
-            #total-amount::before {
                 width: 38%;
             }
             #total-amount {
@@ -727,17 +693,11 @@
             .line {
                 width: 11%;
             }
-            #order-number::before {
-                width: 11%;
-            }
             .long_line {
                 width: 29%;
             }
             #total-amount {
                 margin-left: 105px!important;
-            }
-            #total-amount::before {
-                width: 29%;
             }
         }
         
@@ -858,6 +818,15 @@
             }
             #card-cvc-field .form-label {
                 margin-left: 30px;
+            }
+            #order-info {
+                width: 90%!important;
+            }
+            #main-container {
+                margin: 0!important;
+            }
+            footer {
+                flex-wrap: wrap;
             }
         }
         #accept-terms-field,
