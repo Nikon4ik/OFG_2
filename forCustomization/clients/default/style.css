@@ -738,6 +738,9 @@
             #card-cvc-field.form-group {
                 width: 49% !important;
             }
+            #payment-form .form-label {
+                width: 100%!important;
+            }
         }
         
         #payment-data-fields h2 {
@@ -2054,6 +2057,14 @@
             left: 0;
         }
         
+        @media (max-width: 325px) {
+            #card-cvc-field.form-group {
+                width: 50% !important;
+            }
+            #payment-form .form-label {
+                width: 100%!important;
+            }
+        }
         @media(max-width:460px) {
             #cvc-hint-bubble.opened {
                 bottom: 35px
