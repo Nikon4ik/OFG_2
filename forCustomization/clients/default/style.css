@@ -1583,9 +1583,9 @@
             }
         }
         
-        @media(max-width:770px) {
+        @media(max-width:1025px) {
             #cvc-hint {
-                margin-left: 30px;
+                right: -16px;
             }
             #payment-form .form-input input#input-card-cvc {
                 width: 96%!important;
