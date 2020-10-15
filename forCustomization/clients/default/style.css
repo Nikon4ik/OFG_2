@@ -621,7 +621,7 @@
         option[data-i18n="paymentdata.card.expires.year"] {
             color: #656565!important;
         }
-        @media(min-width:780px) {
+        @media(min-width:1025px) {
             body.display-orderitems #payment-data-fields {
                 display: flex;
                 flex-wrap: wrap;
@@ -1003,7 +1003,7 @@
             line-height: 1.5;
         }
         
-        @media(max-width:780px) {
+        @media(max-width:1025px) {
             #order-details {
                 float: none;
                 width: 100%;
@@ -1020,7 +1020,7 @@
             
         }
         
-        @media(min-width:425px) and (max-width:780px) {
+        @media(min-width:425px) and (max-width:1025px) {
             #order-item-list {
                 margin: 0 auto;
                 width: 70%;
