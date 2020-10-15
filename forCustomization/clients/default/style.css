@@ -154,6 +154,9 @@
             #input-card-cvc {
                 margin-right: 0!important;
             }
+            #payment-form .form-label {
+                width: 90%!important;
+            }
         }
         #payment-data-accept {
             display: none;
@@ -732,6 +735,9 @@
             #total-amount {
                 margin-left: 105px!important;
             }
+            #card-cvc-field.form-group {
+                width: 49% !important;
+            }
         }
         
         #payment-data-fields h2 {
@@ -779,7 +785,7 @@
             vertical-align: top;
             position: absolute;
             top: -26px;
-            left: 85px;
+            right: 10px;
             display: inline-block;
         }
         
