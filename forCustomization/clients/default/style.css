@@ -125,6 +125,23 @@
                 width: 100% !important;
                 border: none !important
             }
+            #order-info {
+                width: 90%!important;
+            }
+            #main-container {
+                margin: 0!important;
+            }
+            footer {
+                flex-wrap: wrap;
+            }
+            #footer-icons {
+                position: unset;
+                width: 100%;
+            }
+            #footer-text {
+                position: unset;
+                width: 260px!important;
+            }
         }
         #payment-data-accept {
             display: none;
@@ -818,15 +835,6 @@
             }
             #card-cvc-field .form-label {
                 margin-left: 30px;
-            }
-            #order-info {
-                width: 90%!important;
-            }
-            #main-container {
-                margin: 0!important;
-            }
-            footer {
-                flex-wrap: wrap;
             }
         }
         #accept-terms-field,
