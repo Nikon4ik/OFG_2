@@ -148,11 +148,11 @@
             #payment-data-card {
                 width: 100%!important;
             }
-            #card-expires-field {
-                width: 100%!important;
-            }
             #card-cvc-field.form-group {
-                width: 45%!important;
+                width: 39.5%!important;
+            }
+            #input-card-cvc {
+                margin-right: 0!important;
             }
         }
         #payment-data-accept {
