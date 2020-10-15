@@ -146,7 +146,7 @@
                 width: 260px!important;
             }
             #payment-data-card {
-                width: 100%;
+                width: 100%!important;
             }
             #card-expires-field {
                 width: 100%!important;
@@ -366,9 +366,11 @@
             margin-bottom: 15px;
             align-content: center;
             align-items: center;
+            position: relative;
+        }
+        #order-number-cnt > span:first-child{
             width: 120px;
             text-align: start;
-            position: relative;
         }
         
         #order-number {
