@@ -145,6 +145,15 @@
                 position: unset!important;
                 width: 260px!important;
             }
+            #payment-data-card {
+                width: 100%;
+            }
+            #card-expires-field {
+                width: 100%!important;
+            }
+            #card-cvc-field.form-group {
+                width: 45%!important;
+            }
         }
         #payment-data-accept {
             display: none;
@@ -357,6 +366,8 @@
             margin-bottom: 15px;
             align-content: center;
             align-items: center;
+            width: 120px;
+            text-align: start;
             position: relative;
         }
         
