@@ -645,7 +645,7 @@
             bottom: 0;
             right: 60px;
         }
-        @media(max-width:770px) {
+        @media(max-width:1025px) {
             #payment-data-fields {
                 border: 0;
                 padding: 24px;
@@ -673,7 +673,7 @@
             }
         }
         
-        @media(max-width:425px) and (max-width:770px) {
+        @media(max-width:425px) and (max-width:1025px) {
             #payment-data-fields {
                 width: 70%;
                 padding: 0
@@ -971,7 +971,7 @@
             border: 1px solid #942F2F;
         }
         
-        @media(min-width:770px) and (max-width:1200px) {
+        @media(min-width:1025px) and (max-width:1200px) {
             .display-orderitems #payment-actions {
                 width: 86%
             }
@@ -1524,19 +1524,19 @@
             display: block
         }
         
-        @media(min-width:770px) and (max-width:1200px) {
+        @media(min-width:1025px) and (max-width:1200px) {
             #astropay-bank-list li {
                 width: 33.3333333%
             }
         }
         
-        @media(max-width:770px) {
+        @media(max-width:1025px) {
             #astropay-bank-list li {
                 width: 50%
             }
         }
         
-        @media(max-width:770px) {
+        @media(max-width:1025px) {
             #astropay-select-bank {
                 text-align: center
             }
@@ -1551,7 +1551,7 @@
             height: 400px
         }
         
-        @media(min-width:770px) {
+        @media(min-width:1025px) {
             #neteller-uid-field .form-label {
                 vertical-align: top;
                 padding-top: 4px;
