@@ -135,11 +135,14 @@
                 flex-wrap: wrap;
             }
             #footer-icons {
-                position: unset;
+                position: unset!important;
                 width: 100%;
+                justify-content: center;
+                margin-top: 20px;
+
             }
             #footer-text {
-                position: unset;
+                position: unset!important;
                 width: 260px!important;
             }
         }
