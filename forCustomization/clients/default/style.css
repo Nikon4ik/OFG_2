@@ -256,7 +256,7 @@
             height: 100%
         }
         
-        @media(max-width:768px) {
+        @media(max-width:1025px) {
             #merchant-logo {
                 position: static;
                 width: 100%;
@@ -846,7 +846,7 @@
             word-break: break-word
         }
         
-        @media(max-width:768px) {
+        @media(max-width:1025px) {
             #payment-data-shipping-copy {
                 width: 100%;
                 margin-left: 0
@@ -1584,6 +1584,9 @@
         }
         
         @media(max-width:1025px) {
+            #order-info {
+                width: 70%;
+            }
             #cvc-hint {
                 right: -16px;
             }
@@ -1862,7 +1865,7 @@
             margin-top: 45px
         }
         
-        @media(max-width:768px) {
+        @media(max-width:1025px) {
             #payment-details h2 {
                 width: 100%;
                 text-align: center;
