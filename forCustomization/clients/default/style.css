@@ -157,6 +157,10 @@
             #payment-form .form-label {
                 width: 90%!important;
             }
+            #cvc-hint {
+                position: absolute!important;
+                right: -10px!important;
+            }
         }
         #payment-data-accept {
             display: none;
@@ -2063,6 +2067,10 @@
             }
             #payment-form .form-label {
                 width: 100%!important;
+            }
+            #cvc-hint {
+                position: absolute;
+                right: -10px;
             }
         }
         @media(max-width:460px) {
