@@ -121,6 +121,9 @@
         }
         
         @media(max-width:760px) {
+            #order-number {
+                text-align: end;
+            }
             #main-container {
                 width: 100% !important;
                 border: none !important
