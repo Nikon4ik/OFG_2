@@ -974,7 +974,7 @@
             border: 1px solid #942F2F;
         }
         
-        @media(min-width:1025px) and (max-width:1200px) {
+        /* @media(min-width:1025px) and (max-width:1200px) {
             .display-orderitems #payment-actions {
                 width: 86%
             }
@@ -986,7 +986,7 @@
             #action-cancel {
                 margin-left: 8%
             }
-        }
+        } */
         
         #order-details {
             display: none;
@@ -1527,11 +1527,11 @@
             display: block
         }
         
-        @media(min-width:1025px) and (max-width:1200px) {
+        /* @media(min-width:1025px) and (max-width:1200px) {
             #astropay-bank-list li {
                 width: 33.3333333%
             }
-        }
+        } */
         
         @media(max-width:1025px) {
             #astropay-bank-list li {
