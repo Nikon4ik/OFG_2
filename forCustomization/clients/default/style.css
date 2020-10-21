@@ -259,7 +259,7 @@
             height: 100%
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #merchant-logo {
                 position: static;
                 width: 100%;
@@ -648,7 +648,7 @@
             bottom: 0;
             right: 60px;
         }
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #payment-data-fields {
                 border: 0;
                 padding: 24px;
@@ -676,7 +676,7 @@
             }
         }
         
-        @media(max-width:425px) and (max-width:1025px) {
+        @media(max-width:425px) and (max-width:1200px) {
             #payment-data-fields {
                 width: 70%;
                 padding: 0
@@ -849,7 +849,7 @@
             word-break: break-word
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #payment-data-shipping-copy {
                 width: 100%;
                 margin-left: 0
@@ -1006,7 +1006,7 @@
             line-height: 1.5;
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #order-details {
                 float: none;
                 width: 100%;
@@ -1023,7 +1023,7 @@
             
         }
         
-        @media(min-width:425px) and (max-width:1025px) {
+        @media(min-width:425px) and (max-width:1200px) {
             #order-item-list {
                 margin: 0 auto;
                 width: 70%;
@@ -1533,13 +1533,13 @@
             }
         } */
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #astropay-bank-list li {
                 width: 50%
             }
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #astropay-select-bank {
                 text-align: center
             }
@@ -1586,7 +1586,7 @@
             }
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #order-info {
                 width: 70%;
             }
@@ -1868,7 +1868,7 @@
             margin-top: 45px
         }
         
-        @media(max-width:1025px) {
+        @media(max-width:1200px) {
             #payment-details h2 {
                 width: 100%;
                 text-align: center;
